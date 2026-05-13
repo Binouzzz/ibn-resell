@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBN Resell — Formation Achat-Revente Luxe Vinted</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .animate { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .animate.visible { opacity: 1; transform: translateY(0); }
+    .animate-delay-1 { transition-delay: 0.1s; }
+    .animate-delay-2 { transition-delay: 0.2s; }
+    .animate-delay-3 { transition-delay: 0.3s; }
+    .animate-delay-4 { transition-delay: 0.4s; }
+    .guarantee-strip {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      padding: 24px 40px;
+      background: rgba(255,255,255,0.02);
+      border-top: 1px solid rgba(255,255,255,0.04);
+      flex-wrap: wrap;
+    }
+    .guarantee-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+    }
+    .guarantee-item span { font-size: 20px; }
+    .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .urgency-text {
+      font-size: 14px;
+      color: var(--pink);
+      font-weight: 600;
+      margin-top: 12px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.6} }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <a href="index.html">
+      <img src="assets/logo.png" alt="IBN Resell" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"/>
+      <span style="display:none; font-size:22px; font-weight:900; background:linear-gradient(135deg,#FF6B00,#FFB300); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">IBN Resell</span>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Accueil</a></li>
+    <li><a href="formation.html">Formation</a></li>
+    <li><a href="module1.html">Module 1</a></li>
+    <li><a href="module2.html">Module 2</a></li>
+    <li><a href="module3.html">Module 3</a></li>
+    <li><a href="formation.html" class="nav-cta">Rejoindre →</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-lines"></div>
+  <div class="hero-content">
+    <div class="hero-badge animate">
+      <span>🔥</span> La méthode qui génère des résultats réels
+    </div>
+    <h1 class="hero-title animate animate-delay-1">
+      Maîtrise le<br/>
+      <span class="highlight">Luxe Vinted</span><br/>
+      et génère des profits
+    </h1>
+    <p class="hero-subtitle animate animate-delay-2">
+      Apprends à identifier, acheter et revendre des pièces de luxe sur Vinted.
+      De la recherche de bonnes affaires jusqu'à la vente à prix fort — tout est dans la formation.
+    </p>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown-wrapper animate animate-delay-3">
+      <p class="countdown-label">⚡ Offre limitée — expire dans</p>
+      <div class="countdown">
+        <div class="countdown-item">
+          <span class="countdown-number" id="cd-hours">00</span>
+          <span class="countdown-unit">Heures</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="cd-minutes">00</span>
+          <span class="countdown-unit">Minutes</span>
+        </div>
+        <div class="countdown-item">
+          <span class="countdown-number" id="cd-seconds">00</span>
+          <span class="countdown-unit">Secondes</span>
+        </div>
+      </div>
+      <p class="urgency-text">⚠️ Prix promotionnel disponible pour encore peu de temps</p>
+    </div>
+
+    <div class="hero-buttons animate animate-delay-4">
+      <a href="formation.html" class="btn-primary">🚀 Accéder à la formation</a>
+      <a href="#learn" class="btn-secondary">Voir le programme ↓</a>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE STRIP -->
+<div class="guarantee-strip">
+  <div class="guarantee-item"><span>🔒</span> Paiement 100% sécurisé</div>
+  <div class="guarantee-item"><span>📦</span> Accès immédiat après paiement</div>
+  <div class="guarantee-item"><span>♾️</span> Accès à vie au contenu</div>
+  <div class="guarantee-item"><span>🎯</span> Méthode approuvée</div>
+</div>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stats-grid">
+    <div class="animate">
+      <span class="stat-number">50+</span>
+      <p class="stat-label">Élèves formés</p>
+    </div>
+    <div class="animate animate-delay-1">
+      <span class="stat-number">3</span>
+      <p class="stat-label">Modules complets</p>
+    </div>
+    <div class="animate animate-delay-2">
+      <span class="stat-number">99%</span>
+      <p class="stat-label">Taux de satisfaction</p>
+    </div>
+    <div class="animate animate-delay-3">
+      <span class="stat-number">5×</span>
+      <p class="stat-label">Marge moyenne réalisée</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU'LL LEARN -->
+<section class="section" id="learn">
+  <div class="animate">
+    <span class="section-tag">Le programme</span>
+    <h2 class="section-title">Tout ce que tu vas <span class="highlight">maîtriser</span></h2>
+    <p class="section-sub">Une formation complète structurée en 3 modules pour passer de zéro à la première vente, puis scaler.</p>
+  </div>
+  <div class="learn-grid">
+    <div class="learn-card animate">
+      <span class="learn-icon">🔍</span>
+      <h3>Trouver les bonnes pièces</h3>
+      <p>Identifier les articles sous-cotés, détecter les fakes, comprendre les cotes du marché luxe sur Vinted.</p>
+    </div>
+    <div class="learn-card animate animate-delay-1">
+      <span class="learn-icon">💰</span>
+      <h3>Négocier et acheter</h3>
+      <p>Techniques de négociation, pièges à éviter, gestion du budget et maximisation de la marge d'achat.</p>
+    </div>
+    <div class="learn-card animate animate-delay-2">
+      <span class="learn-icon">📸</span>
+      <h3>Présenter pour vendre</h3>
+      <p>Photos qui convertissent, descriptions percutantes, tarification optimale pour vendre vite et cher.</p>
+    </div>
+    <div class="learn-card animate animate-delay-3">
+      <span class="learn-icon">🏷️</span>
+      <h3>Authentification luxe</h3>
+      <p>Reconnaître les marques authentiques (Louis Vuitton, Hermès, Chanel...) et éviter les pièges.</p>
+    </div>
+    <div class="learn-card animate animate-delay-1">
+      <span class="learn-icon">📈</span>
+      <h3>Scaler son activité</h3>
+      <p>Passer de quelques ventes à un revenu régulier. Organiser, automatiser, et développer son stock.</p>
+    </div>
+    <div class="learn-card animate animate-delay-2">
+      <span class="learn-icon">🧠</span>
+      <h3>Mindset & stratégie</h3>
+      <p>Les erreurs des débutants, la bonne mentalité pour durer et construire une réputation solide.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="testimonials-inner">
+    <div class="animate" style="text-align:center">
+      <span class="section-tag">Témoignages</span>
+      <h2 class="section-title">Ils ont <span class="highlight">transformé</span> leurs résultats</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card animate">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "J'ai récupéré mon investissement dès la première semaine. Le module sur l'authentification vaut à lui seul le prix de la formation. Je recommande à 100%."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar">L</div>
+          <div>
+            <p class="author-name">Lucas M.</p>
+            <p class="author-info">+480€ en 3 semaines</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate animate-delay-1">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Enfin une formation concrète, pas du blabla. Des techniques applicables immédiatement. J'avais déjà essayé la revente sans résultats, maintenant ça tourne vraiment."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar">S</div>
+          <div>
+            <p class="author-name">Sarah K.</p>
+            <p class="author-info">Revenu complémentaire régulier</p>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate animate-delay-2">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">
+          "Le module 2 sur la négociation m'a changé la vie. Je suis passé de 30% de marge à plus de 70% sur certaines pièces. Le contenu est extrêmement précis."
+        </p>
+        <div class="testimonial-author">
+          <div class="author-avatar">A</div>
+          <div>
+            <p class="author-name">Antoine R.</p>
+            <p class="author-info">+70% de marge moyenne</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOR WHO -->
+<section class="section">
+  <div class="animate" style="text-align:center; max-width:600px; margin:0 auto 0">
+    <span class="section-tag">Pour qui ?</span>
+    <h2 class="section-title">Cette formation est<br/><span class="highlight">faite pour toi si...</span></h2>
+  </div>
+  <div class="forwho-grid">
+    <div class="forwho-card yes animate animate-delay-1">
+      <h3>✓ C'est pour toi</h3>
+      <ul class="forwho-list">
+        <li>Tu veux générer un revenu complémentaire sérieux</li>
+        <li>Tu es motivé à appliquer une méthode concrète</li>
+        <li>Tu cherches un business sans stock massif au départ</li>
+        <li>Tu veux te passionner pour le monde du luxe</li>
+        <li>Tu es prêt à investir quelques heures par semaine</li>
+      </ul>
+    </div>
+    <div class="forwho-card no animate animate-delay-2">
+      <h3>✗ Ce n'est pas pour toi</h3>
+      <ul class="forwho-list">
+        <li>Tu cherches à devenir riche du jour au lendemain</li>
+        <li>Tu ne veux pas travailler ou apprendre</li>
+        <li>Tu espères un système 100% passif sans effort</li>
+        <li>Tu n'es pas prêt à investir dans ta formation</li>
+        <li>Tu veux vendre des contrefaçons (interdit dans la formation)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" style="padding-top:0">
+  <div class="animate">
+    <span class="section-tag">Questions fréquentes</span>
+    <h2 class="section-title">Tu te poses des <span class="highlight">questions ?</span></h2>
+  </div>
+  <div class="faq-list animate animate-delay-1">
+    <div class="faq-item">
+      <div class="faq-question">
+        Faut-il avoir de l'expérience pour commencer ?
+        <span class="faq-arrow">⌄</span>
+      </div>
+      <div class="faq-answer">
+        Non, zéro expérience requise. La formation part de la base absolue et accompagne progressivement jusqu'aux techniques avancées. Que tu sois total débutant ou déjà initié, tu trouveras de la valeur à chaque module.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        Comment accéder aux modules après l'achat ?
+        <span class="faq-arrow">⌄</span>
+      </div>
+      <div class="faq-answer">
+        Après ton paiement, tu reçois par email un mot de passe personnalisé. Il te suffit de le saisir sur chacune des pages Module pour débloquer le contenu instantanément. Accès à vie garanti.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        Quel budget faut-il pour commencer la revente ?
+        <span class="faq-arrow">⌄</span>
+      </div>
+      <div class="faq-answer">
+        On peut démarrer avec 100-200€. Le module 1 t'explique précisément comment choisir tes premières pièces en fonction de ton budget initial pour maximiser les chances de succès.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        La formation est-elle remboursable ?
+        <span class="faq-arrow">⌄</span>
+      </div>
+      <div class="faq-answer">
+        Oui, nous offrons une garantie satisfait ou remboursé de 14 jours. Si après avoir suivi le contenu tu n'es pas satisfait, contacte-nous et nous procédons au remboursement intégral.
+      </div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">
+        Est-ce que ça fonctionne aussi en dehors de la France ?
+        <span class="faq-arrow">⌄</span>
+      </div>
+      <div class="faq-answer">
+        La méthode est applicable dans tous les pays où Vinted est présent (France, Belgique, Suisse, Espagne, Allemagne...). Le marché du luxe d'occasion est mondial.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="final-cta-content animate">
+    <span class="section-tag">Dernière chance</span>
+    <h2>Prêt à passer à l'action ?</h2>
+    <p>Des centaines d'élèves ont déjà transformé leurs habitudes avec IBN Resell. C'est ton tour.</p>
+    <a href="formation.html" class="btn-primary" style="font-size:18px; padding:20px 52px;">
+      🔥 Je veux la formation
+    </a>
+    <p style="margin-top:20px; font-size:14px; color:var(--gray)">
+      Accès immédiat · Paiement sécurisé · Garantie 14 jours
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p style="margin-bottom:12px">
+    © 2024 IBN Resell — Tous droits réservés &nbsp;|&nbsp;
+    <a href="#">Mentions légales</a> &nbsp;|&nbsp;
+    <a href="#">CGV</a> &nbsp;|&nbsp;
+    <a href="#">Contact</a>
+  </p>
+  <p style="font-size:12px; opacity:0.5">IBN Resell ne garantit pas de résultats financiers spécifiques. Les résultats dépendent de l'investissement personnel de chaque élève.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

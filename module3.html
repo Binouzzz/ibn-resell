@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 3 — IBN Resell</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <a href="index.html">
+      <img src="assets/logo.png" alt="IBN Resell" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"/>
+      <span style="display:none; font-size:22px; font-weight:900; background:linear-gradient(135deg,#FF6B00,#FFB300); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">IBN Resell</span>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="formation.html">Formation</a></li>
+    <li><a href="module1.html">Module 1</a></li>
+    <li><a href="module2.html">Module 2</a></li>
+    <li><a href="module3.html" class="active">Module 3</a></li>
+  </ul>
+</nav>
+
+<!-- PASSWORD GATE -->
+<div id="gate" class="module-gate">
+  <div class="gate-card">
+    <span class="gate-lock">🔐</span>
+    <h2>Module 3 — Accès réservé</h2>
+    <p>Ce contenu est réservé aux élèves inscrits.<br/>Saisis ton mot de passe reçu par email pour débloquer le module.</p>
+    <input
+      type="password"
+      id="gate-input"
+      class="gate-input"
+      placeholder="Ton mot de passe..."
+      autocomplete="off"
+    />
+    <p class="gate-error" id="gate-error">❌ Mot de passe incorrect. Vérifie ton email.</p>
+    <button id="gate-btn" class="btn-primary gate-btn">Accéder au module →</button>
+    <p style="margin-top:20px; font-size:13px; color:var(--gray)">
+      Pas encore inscrit ? <a href="formation.html" style="color:var(--gold)">Rejoindre la formation →</a>
+    </p>
+  </div>
+</div>
+
+<!-- MODULE CONTENT -->
+<div id="module-content" class="module-page" style="display:none">
+
+  <div class="module-header">
+    <div class="module-header-inner">
+      <span class="module-tag">Module 3 sur 3</span>
+      <h1>Vendre & Scaler — Construis ton revenu</h1>
+      <p>Photos qui convertissent, annonces percutantes, pricing optimal — et enfin comment passer à l'échelle pour un revenu régulier.</p>
+    </div>
+  </div>
+
+  <div class="module-body">
+
+    <div>
+      <div class="video-placeholder">
+        <span>▶️</span>
+        <p>Leçon 3.1 — La photo qui vend</p>
+        <p style="font-size:13px; color:rgba(255,255,255,0.3)">Placeholder vidéo — à remplacer par ta vidéo</p>
+      </div>
+
+      <div class="lesson-list">
+        <div class="lesson-item active">
+          <div class="lesson-num">1</div>
+          <span class="lesson-title">3.1 — La photo qui vend</span>
+          <span class="lesson-duration">20 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">2</div>
+          <span class="lesson-title">3.2 — Rédiger une description irrésistible</span>
+          <span class="lesson-duration">17 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">3</div>
+          <span class="lesson-title">3.3 — Stratégie de pricing avancée</span>
+          <span class="lesson-duration">23 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">4</div>
+          <span class="lesson-title">3.4 — Gérer les acheteurs & les offres</span>
+          <span class="lesson-duration">18 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">5</div>
+          <span class="lesson-title">3.5 — Construire une réputation 5 étoiles</span>
+          <span class="lesson-duration">15 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">6</div>
+          <span class="lesson-title">3.6 — Scaler : de 5 à 50 ventes/mois</span>
+          <span class="lesson-duration">35 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">7</div>
+          <span class="lesson-title">3.7 — Fiscalité & aspects légaux</span>
+          <span class="lesson-duration">21 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">8</div>
+          <span class="lesson-title">3.8 — Récap final & prochaines étapes</span>
+          <span class="lesson-duration">12 min</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-sidebar">
+      <h3>Ressources du module</h3>
+
+      <div class="content-placeholder">
+        <h4>📸 Guide Photo Pro</h4>
+        <p>Toutes les techniques pour des photos qui donnent envie d'acheter, même avec un smartphone.</p>
+        <a href="#" style="display:inline-block; margin-top:12px; font-size:13px; color:var(--gold); font-weight:700;">Télécharger →</a>
+      </div>
+
+      <div class="content-placeholder">
+        <h4>✍️ Templates descriptions</h4>
+        <p>10 modèles de descriptions prêts à utiliser pour les catégories les plus vendues.</p>
+        <a href="#" style="display:inline-block; margin-top:12px; font-size:13px; color:var(--gold); font-weight:700;">Télécharger →</a>
+      </div>
+
+      <div class="content-placeholder">
+        <h4>📈 Tableau de suivi</h4>
+        <p>Suis chaque achat, chaque vente et ta rentabilité mensuelle en un coup d'œil.</p>
+        <a href="#" style="display:inline-block; margin-top:12px; font-size:13px; color:var(--gold); font-weight:700;">Télécharger →</a>
+      </div>
+
+      <div style="margin-top:24px; padding:24px; background:linear-gradient(135deg, rgba(255,107,0,0.1), rgba(139,48,232,0.1)); border:1px solid rgba(255,179,0,0.25); border-radius:16px; text-align:center;">
+        <p style="font-size:22px; margin-bottom:10px">🎉</p>
+        <p style="font-size:15px; font-weight:700; margin-bottom:8px;">Formation complète !</p>
+        <p style="font-size:13px; color:var(--gray); line-height:1.5; margin-bottom:16px;">Tu as tout ce qu'il faut pour démarrer. Maintenant, à toi de jouer.</p>
+        <a href="index.html" class="btn-primary" style="font-size:14px; padding:12px 20px; width:100%; justify-content:center;">
+          Retour à l'accueil
+        </a>
+      </div>
+
+      <div style="margin-top:12px;">
+        <a href="module2.html" class="btn-secondary" style="font-size:14px; padding:12px 24px; width:100%; justify-content:center;">
+          ← Module 2
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => initGate(3));
+
+  document.querySelectorAll('.lesson-item').forEach((item) => {
+    item.addEventListener('click', () => {
+      document.querySelectorAll('.lesson-item').forEach((i) => i.classList.remove('active'));
+      item.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

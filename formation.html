@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Formation — IBN Resell</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .animate { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .animate.visible { opacity: 1; transform: translateY(0); }
+    .animate-delay-1 { transition-delay: 0.1s; }
+    .animate-delay-2 { transition-delay: 0.2s; }
+
+    .stripe-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      background: linear-gradient(135deg, #635BFF, #4B45CC);
+      color: #fff;
+      padding: 17px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 700;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.2s;
+      margin-bottom: 14px;
+      box-shadow: 0 6px 30px rgba(99, 91, 255, 0.4);
+    }
+    .stripe-btn:hover { opacity: 0.92; transform: translateY(-2px); }
+    .stripe-logo { font-size: 13px; opacity: 0.8; }
+
+    .countdown-mini {
+      background: rgba(233, 30, 140, 0.1);
+      border: 1px solid rgba(233, 30, 140, 0.3);
+      border-radius: 12px;
+      padding: 14px 18px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .countdown-mini p { font-size: 13px; color: var(--pink); font-weight: 600; margin-bottom: 8px; }
+    .countdown-mini .timer {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--white);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .formation-hero-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .trust-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+      justify-content: center;
+    }
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .what-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 40px;
+    }
+
+    .timeline {
+      position: relative;
+      margin-top: 50px;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 28px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--purple), transparent);
+    }
+
+    .timeline-item {
+      display: flex;
+      gap: 28px;
+      margin-bottom: 36px;
+      align-items: flex-start;
+    }
+
+    .timeline-dot {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: var(--gradient-purple);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .timeline-body h3 {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .timeline-body p {
+      font-size: 14px;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <a href="index.html">
+      <img src="assets/logo.png" alt="IBN Resell" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"/>
+      <span style="display:none; font-size:22px; font-weight:900; background:linear-gradient(135deg,#FF6B00,#FFB300); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">IBN Resell</span>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="formation.html" class="active">Formation</a></li>
+    <li><a href="module1.html">Module 1</a></li>
+    <li><a href="module2.html">Module 2</a></li>
+    <li><a href="module3.html">Module 3</a></li>
+    <li><a href="formation.html" class="nav-cta">Rejoindre →</a></li>
+  </ul>
+</nav>
+
+<!-- HERO FORMATION -->
+<section class="formation-hero">
+  <div class="formation-hero-inner animate">
+    <div class="hero-badge" style="justify-content:center; display:inline-flex; margin-bottom:20px">
+      <span>💎</span> Formation complète — Achat-Revente Luxe Vinted
+    </div>
+    <h1 class="hero-title" style="font-size: clamp(32px,5vw,60px)">
+      La seule formation dont<br/>tu as besoin pour<br/>
+      <span class="highlight">réussir sur Vinted</span>
+    </h1>
+    <p class="hero-subtitle" style="margin:20px auto 0">
+      3 modules. Des dizaines de techniques concrètes. Une méthode testée et approuvée par plus de 500 élèves.
+    </p>
+    <div class="trust-badges">
+      <div class="trust-badge">🎯 Méthode approuvée</div>
+      <div class="trust-badge">⚡ Accès immédiat</div>
+      <div class="trust-badge">♾️ Accès à vie</div>
+      <div class="trust-badge">✅ Garantie 14 jours</div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="formation-content">
+
+  <!-- LEFT: DETAILS -->
+  <div class="formation-details animate">
+    <h2>Ce que contient la formation</h2>
+
+    <div class="module-preview-list">
+      <div class="module-preview">
+        <div class="module-number">1</div>
+        <div class="module-info">
+          <h4>Module 1 — Les Fondations</h4>
+          <p>Comprendre le marché, trouver les pièces, éviter les arnaques</p>
+        </div>
+        <div class="module-lock">🔒</div>
+      </div>
+      <div class="module-preview">
+        <div class="module-number">2</div>
+        <div class="module-info">
+          <h4>Module 2 — Acheter & Négocier</h4>
+          <p>Techniques de négociation, authentification, gestion du budget</p>
+        </div>
+        <div class="module-lock">🔒</div>
+      </div>
+      <div class="module-preview">
+        <div class="module-number">3</div>
+        <div class="module-info">
+          <h4>Module 3 — Vendre & Scaler</h4>
+          <p>Photos, descriptions, pricing, et développer son activité</p>
+        </div>
+        <div class="module-lock">🔒</div>
+      </div>
+    </div>
+
+    <h2 style="margin-bottom:20px">Ce qui est inclus</h2>
+    <ul class="includes-list">
+      <li>Accès complet aux 3 modules vidéo</li>
+      <li>Checklist d'authentification par marque (PDF)</li>
+      <li>Tableau de suivi des achats-reventes (template)</li>
+      <li>Guide des prix du marché luxe Vinted 2024</li>
+      <li>Scripts de négociation prêts à l'emploi</li>
+      <li>Accès à la communauté privée d'élèves</li>
+      <li>Mises à jour régulières du contenu</li>
+      <li>Support par email sous 48h</li>
+    </ul>
+
+    <!-- TIMELINE / PARCOURS -->
+    <h2 style="margin-bottom:8px">Ton parcours étape par étape</h2>
+    <p style="color:var(--gray); font-size:14px; margin-bottom:10px">Suis ce chemin pour aller de 0 à tes premiers profits.</p>
+    <div class="timeline">
+      <div class="timeline-item animate">
+        <div class="timeline-dot">🎓</div>
+        <div class="timeline-body">
+          <h3>Semaine 1 — Fondations</h3>
+          <p>Tu comprends le marché du luxe d'occasion, tu identifies les meilleures marques à revendre et tu apprends à reconnaître les authentiques.</p>
+        </div>
+      </div>
+      <div class="timeline-item animate animate-delay-1">
+        <div class="timeline-dot">🔍</div>
+        <div class="timeline-body">
+          <h3>Semaine 2 — Ton premier achat</h3>
+          <p>Tu maîtrises la recherche de bonnes affaires sur Vinted, tu négocie ton premier achat et tu évites les pièges classiques des débutants.</p>
+        </div>
+      </div>
+      <div class="timeline-item animate animate-delay-2">
+        <div class="timeline-dot">📸</div>
+        <div class="timeline-body">
+          <h3>Semaine 3 — Mise en vente</h3>
+          <p>Tu crées une annonce qui convertit : photos pro, description percutante, tarification optimale. Tu vends et tu encaisses ton premier profit.</p>
+        </div>
+      </div>
+      <div class="timeline-item animate">
+        <div class="timeline-dot">📈</div>
+        <div class="timeline-body">
+          <h3>Mois 2 — Scaler</h3>
+          <p>Tu répètes, tu optimises, tu construis un stock stratégique et tu développes un revenu complémentaire régulier.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: PAYMENT CARD -->
+  <div class="animate animate-delay-1">
+    <div class="payment-card">
+
+      <div class="countdown-mini">
+        <p>⚡ Offre spéciale expire dans</p>
+        <div class="timer">
+          <span id="cd-hours">00</span>:<span id="cd-minutes">00</span>:<span id="cd-seconds">00</span>
+        </div>
+      </div>
+
+      <div class="price-display">
+        <p class="price-old">Prix habituel : 197€</p>
+        <span class="price-badge">🔥 -49% aujourd'hui</span>
+        <p class="price-new">99€</p>
+        <p class="price-period">Paiement unique · Accès à vie</p>
+      </div>
+
+      <!-- STRIPE BUTTON -->
+      <a href="https://buy.stripe.com/00w00i1NId8H3Ca56Aebu01" class="stripe-btn" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 2.5C13.5 1.67 12.83 1 12 1s-1.5.67-1.5 1.5v1h3v-1zM8.5 4.5H5a1 1 0 00-1 1v13a1 1 0 001 1h14a1 1 0 001-1v-13a1 1 0 00-1-1h-3.5M8.5 4.5h7M8.5 4.5v-2" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Payer maintenant — 99€
+        <span class="stripe-logo">via Stripe 🔒</span>
+      </a>
+
+      <div class="payment-features">
+        <div class="payment-feature">Accès aux 3 modules complets</div>
+        <div class="payment-feature">PDF + Templates offerts</div>
+        <div class="payment-feature">Communauté privée incluse</div>
+        <div class="payment-feature">Mises à jour gratuites à vie</div>
+        <div class="payment-feature">Mot de passe envoyé par email</div>
+      </div>
+
+      <p class="payment-card-guarantee">
+        <span>✓ Garantie satisfait ou remboursé 14 jours</span>
+      </p>
+
+      <div style="margin-top:20px; padding-top:20px; border-top:1px solid rgba(255,255,255,0.06); text-align:center;">
+        <p style="font-size:12px; color:var(--gray); line-height:1.6">
+          🔒 Paiement 100% sécurisé par Stripe.<br/>
+          Tes données bancaires ne nous sont jamais transmises.
+        </p>
+        <div style="display:flex; justify-content:center; gap:10px; margin-top:12px; font-size:22px; opacity:0.5">
+          💳 🛡️ ✅
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="section" style="padding-top:20px; max-width:800px">
+  <div class="animate">
+    <span class="section-tag">FAQ</span>
+    <h2 class="section-title">Questions <span class="highlight">fréquentes</span></h2>
+  </div>
+  <div class="faq-list animate animate-delay-1">
+    <div class="faq-item">
+      <div class="faq-question">Comment vais-je recevoir mon mot de passe ?<span class="faq-arrow">⌄</span></div>
+      <div class="faq-answer">Après confirmation de ton paiement Stripe, tu reçois automatiquement un email avec ton mot de passe personnalisé dans les 5 minutes. Vérifie tes spams si tu ne le vois pas.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">L'accès est-il vraiment à vie ?<span class="faq-arrow">⌄</span></div>
+      <div class="faq-answer">Oui. Une fois le paiement effectué, tu accèdes aux modules avec ton mot de passe sans limite de temps. Les mises à jour futures sont également incluses gratuitement.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Combien de temps faut-il pour voir des résultats ?<span class="faq-arrow">⌄</span></div>
+      <div class="faq-answer">La plupart des élèves réalisent leur première vente profitable dans les 2 premières semaines. Cela dépend évidemment du temps que tu y consacres et de ton budget initial.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p style="margin-bottom:12px">
+    © 2024 IBN Resell — Tous droits réservés &nbsp;|&nbsp;
+    <a href="#">Mentions légales</a> &nbsp;|&nbsp;
+    <a href="#">CGV</a> &nbsp;|&nbsp;
+    <a href="#">Contact</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

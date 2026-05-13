@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Module 2 — IBN Resell</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <a href="index.html">
+      <img src="assets/logo.png" alt="IBN Resell" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'"/>
+      <span style="display:none; font-size:22px; font-weight:900; background:linear-gradient(135deg,#FF6B00,#FFB300); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">IBN Resell</span>
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="formation.html">Formation</a></li>
+    <li><a href="module1.html">Module 1</a></li>
+    <li><a href="module2.html" class="active">Module 2</a></li>
+    <li><a href="module3.html">Module 3</a></li>
+  </ul>
+</nav>
+
+<!-- PASSWORD GATE -->
+<div id="gate" class="module-gate">
+  <div class="gate-card">
+    <span class="gate-lock">🔐</span>
+    <h2>Module 2 — Accès réservé</h2>
+    <p>Ce contenu est réservé aux élèves inscrits.<br/>Saisis ton mot de passe reçu par email pour débloquer le module.</p>
+    <input
+      type="password"
+      id="gate-input"
+      class="gate-input"
+      placeholder="Ton mot de passe..."
+      autocomplete="off"
+    />
+    <p class="gate-error" id="gate-error">❌ Mot de passe incorrect. Vérifie ton email.</p>
+    <button id="gate-btn" class="btn-primary gate-btn">Accéder au module →</button>
+    <p style="margin-top:20px; font-size:13px; color:var(--gray)">
+      Pas encore inscrit ? <a href="formation.html" style="color:var(--gold)">Rejoindre la formation →</a>
+    </p>
+  </div>
+</div>
+
+<!-- MODULE CONTENT -->
+<div id="module-content" class="module-page" style="display:none">
+
+  <div class="module-header">
+    <div class="module-header-inner">
+      <span class="module-tag">Module 2 sur 3</span>
+      <h1>Acheter & Négocier — Maximise ta marge</h1>
+      <p>Maîtrise l'art de la négociation, apprends à authentifier avant d'acheter et construis une stratégie d'achat rentable.</p>
+    </div>
+  </div>
+
+  <div class="module-body">
+
+    <div>
+      <div class="video-placeholder">
+        <span>▶️</span>
+        <p>Leçon 2.1 — La psychologie du vendeur</p>
+        <p style="font-size:13px; color:rgba(255,255,255,0.3)">Placeholder vidéo — à remplacer par ta vidéo</p>
+      </div>
+
+      <div class="lesson-list">
+        <div class="lesson-item active">
+          <div class="lesson-num">1</div>
+          <span class="lesson-title">2.1 — La psychologie du vendeur</span>
+          <span class="lesson-duration">16 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">2</div>
+          <span class="lesson-title">2.2 — Scripts de négociation</span>
+          <span class="lesson-duration">24 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">3</div>
+          <span class="lesson-title">2.3 — Authentification Louis Vuitton</span>
+          <span class="lesson-duration">28 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">4</div>
+          <span class="lesson-title">2.4 — Authentification Chanel & Hermès</span>
+          <span class="lesson-duration">32 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">5</div>
+          <span class="lesson-title">2.5 — Gestion du budget & calcul de marge</span>
+          <span class="lesson-duration">19 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">6</div>
+          <span class="lesson-title">2.6 — Les erreurs d'achat à éviter</span>
+          <span class="lesson-duration">14 min</span>
+        </div>
+        <div class="lesson-item">
+          <div class="lesson-num">7</div>
+          <span class="lesson-title">2.7 — Récap & Checklist Module 2</span>
+          <span class="lesson-duration">9 min</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="module-sidebar">
+      <h3>Ressources du module</h3>
+
+      <div class="content-placeholder">
+        <h4>💬 Scripts de négociation</h4>
+        <p>Les messages prêts à copier-coller pour négocier efficacement sans froisser le vendeur.</p>
+        <a href="#" style="display:inline-block; margin-top:12px; font-size:13px; color:var(--gold); font-weight:700;">Télécharger →</a>
+      </div>
+
+      <div class="content-placeholder">
+        <h4>🏷️ Guide Authenticité LV</h4>
+        <p>Tous les points de contrôle pour authentifier un sac Louis Vuitton en moins de 5 min.</p>
+        <a href="#" style="display:inline-block; margin-top:12px; font-size:13px; color:var(--gold); font-weight:700;">Télécharger →</a>
+      </div>
+
+      <div class="content-placeholder">
+        <h4>📐 Calculatrice de marge</h4>
+        <p>Template Excel pour calculer ta marge nette en tenant compte des frais Vinted et d'envoi.</p>
+        <a href="#" style="display:inline-block; margin-top:12px; font-size:13px; color:var(--gold); font-weight:700;">Télécharger →</a>
+      </div>
+
+      <div style="margin-top:24px; display:flex; flex-direction:column; gap:10px;">
+        <a href="module1.html" class="btn-secondary" style="font-size:14px; padding:12px 24px; justify-content:center;">
+          ← Module 1
+        </a>
+        <a href="module3.html" class="btn-primary" style="font-size:14px; padding:12px 24px; width:100%; justify-content:center;">
+          Module 3 →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => initGate(2));
+
+  document.querySelectorAll('.lesson-item').forEach((item) => {
+    item.addEventListener('click', () => {
+      document.querySelectorAll('.lesson-item').forEach((i) => i.classList.remove('active'));
+      item.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>
