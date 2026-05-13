@@ -2,6 +2,9 @@
   "name": "ibn-resell",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx serve -p $PORT ."
+    "start": "serve -p $PORT ."
+  },
+  "dependencies": {
+    "serve": "^14.0.0"
   }
 }
